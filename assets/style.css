@@ -50,3 +50,14 @@
 #scoreList div:last-child {
   border-bottom: none;
 }
+
+.centered-container {
+  text-align: center;
+  margin: 20px auto; /* marge verticale et centrage horizontal */
+
+}
+#timer {
+  width: fit-content; /* largeur au contenu */
+  margin: 20px auto;  /* centre horizontalement avec marge verticale */
+  text-align: center; /* centre le texte à l’intérieur si besoin */
+}

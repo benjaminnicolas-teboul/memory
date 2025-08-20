@@ -1,4 +1,4 @@
-console.log("grghr");
+
 
 import { initTimer, startTimer, stopTimer, getElapsedTime } from "./modulesJs/timer.js";
 import { Card } from "./modulesJs/card.js";
