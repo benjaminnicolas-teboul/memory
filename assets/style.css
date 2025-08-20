@@ -12,14 +12,14 @@
 }
 
 .card {
-  width: 100%;  /* largeur prend toute la colonne */
-  aspect-ratio: 3 / 4;  /* ratio 60x80 pixels */
+  width: 100%; /* largeur prend toute la colonne */
+  aspect-ratio: 3 / 4; /* ratio 60x80 pixels */
   background-size: cover;
   background-position: center;
   border: 2px solid #333;
   border-radius: 6px;
   cursor: pointer;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
 }
 
@@ -27,7 +27,7 @@
   transform: scale(1.05);
 }
 .card.backface {
-  background-color: gray;   /* dos grisé */
+  background-color: gray; /* dos grisé */
   filter: grayscale(100%);
   cursor: default;
 }
@@ -40,7 +40,7 @@
   border-radius: 8px;
   font-family: Arial, sans-serif;
   color: #333;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 #scoreList div {
@@ -62,20 +62,21 @@
 
 #timer {
   width: fit-content; /* largeur au contenu */
-  margin: 20px auto;  /* centre horizontalement avec marge verticale */
+  margin: 20px auto; /* centre horizontalement avec marge verticale */
   text-align: center; /* centre le texte à l’intérieur si besoin */
 }
 
 @media (max-width: 480px) {
   #game-container {
-    max-width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-    border-width: 4px;
-    grid-template-columns: repeat(4, 1fr); /* fixe 4 colonnes */
-    max-width: 70%;                      /* largeur à 100% écran */
-    border-width: 28px;
-        padding-bottom: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 80%;
+    border-width: 10px;
+    padding-bottom: 15px;
+    padding-right: 8px;
+    gap: 5px;
+    margin: 10px auto;
   }
+
   #timer {
     max-width: 95%;
     padding: 0 8px;
@@ -83,12 +84,13 @@
   .card {
     border-width: 1px;
   }
-    h1, h2 {
-    font-size: 1.5rem;   /* diminue un peu la taille sur petit écran */
+  h1,
+  h2 {
+    font-size: 1.5rem; /* diminue un peu la taille sur petit écran */
     margin: 0.5em 0;
   }
-    button {
-    width: 40%;           /* bouton plus large mais responsive */
+  button {
+    width: 40%; /* bouton plus large mais responsive */
     max-width: 250px;
     margin: 10px auto 0 auto;
     display: block;
