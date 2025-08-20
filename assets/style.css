@@ -73,6 +73,8 @@
     border-width: 4px;
     grid-template-columns: repeat(4, 1fr); /* fixe 4 colonnes */
     max-width: 70%;                      /* largeur à 100% écran */
+    border-width: 28px;
+        padding-bottom: 15px;
   }
   #timer {
     max-width: 95%;
