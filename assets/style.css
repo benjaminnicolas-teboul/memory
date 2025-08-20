@@ -1,17 +1,18 @@
 #game-container {
   display: grid;
-  grid-template-columns: repeat(7, 60px);  /* 7 colonnes de 60px */
-  grid-template-rows: repeat(4, 80px);     /* 4 lignes de 80px */
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* colonnes fluides */
   gap: 8px;
-  width: max-content;
+  width: 100%;
+  max-width: 420px; /* limite max */
   margin: 20px auto;
-  background-color:blueviolet;
-  border: 8px solid blueviolet; 
+  background-color: blueviolet;
+  border: 8px solid blueviolet;
+  box-sizing: border-box;
 }
 
 .card {
-  width: 60px;
-  height: 80px;
+  width: 100%;  /* largeur prend toute la colonne */
+  aspect-ratio: 3 / 4;  /* ratio 60x80 pixels */
   background-size: cover;
   background-position: center;
   border: 2px solid #333;
@@ -52,12 +53,26 @@
 }
 
 .centered-container {
+  max-width: 90%;
+  margin: 0 auto 20px auto;
   text-align: center;
-  margin: 20px auto; /* marge verticale et centrage horizontal */
-
+  padding: 0 10px;
 }
+
 #timer {
   width: fit-content; /* largeur au contenu */
   margin: 20px auto;  /* centre horizontalement avec marge verticale */
   text-align: center; /* centre le texte à l’intérieur si besoin */
+}
+
+@media (max-width: 480px) {
+  #game-container {
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    border-width: 4px;
+  }
+
+  .card {
+    border-width: 1px;
+  }
 }
