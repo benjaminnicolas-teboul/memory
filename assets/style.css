@@ -71,8 +71,21 @@
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     border-width: 4px;
   }
-
+  #timer {
+    max-width: 95%;
+    padding: 0 8px;
+  }
   .card {
     border-width: 1px;
+  }
+    h1, h2 {
+    font-size: 1.5rem;   /* diminue un peu la taille sur petit écran */
+    margin: 0.5em 0;
+  }
+    button {
+    width: 40%;           /* bouton plus large mais responsive */
+    max-width: 250px;
+    margin: 10px auto 0 auto;
+    display: block;
   }
 }
