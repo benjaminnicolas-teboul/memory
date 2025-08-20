@@ -1,2 +1,2 @@
 
-app of the gme memory in Js
+app of the game memory in Js
