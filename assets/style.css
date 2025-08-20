@@ -5,6 +5,8 @@
   gap: 8px;
   width: max-content;
   margin: 20px auto;
+  background-color:blueviolet;
+  border: 8px solid blueviolet; 
 }
 
 .card {
@@ -26,4 +28,25 @@
   background-color: gray;   /* dos grisé */
   filter: grayscale(100%);
   cursor: default;
+}
+#scoreList {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#scoreList div {
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+#scoreList div:last-child {
+  border-bottom: none;
 }

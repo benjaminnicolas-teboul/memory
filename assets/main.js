@@ -1,12 +1,16 @@
+console.log("grghr");
+
 import { initTimer, startTimer, stopTimer, getElapsedTime } from "./modulesJs/timer.js";
 import { Card } from "./modulesJs/card.js";
 import { logos } from "./modulesJs/logos.js";
 import { shuffleCards } from "./modulesJs/shuffleCards.js";
+import {sendScoreIfTopScore } from "./modulesJs/sendScoreIfTopScore.js";
+import { fetchAndDisplayScores } from "./modulesJs/fetchAndDisplayScores.js";
+
 
 const startBtn = document.getElementById("start-game-btn");
-const timerElement = document.getElementById("timer");
 const container = document.getElementById("game-container");
-
+fetchAndDisplayScores();
 let shuffledCards = [];
 let firstCard = null;
 let secondCard = null;
@@ -76,6 +80,24 @@ function setupGameBoard() {
   });
 }
 
+
+
+function checkGameEnd() {
+  const matchedCards = container.querySelectorAll(".matched");
+  if (matchedCards.length === shuffledCards.length) {
+    stopTimer();
+    const elapsedTime = getElapsedTime();
+    alert(`Bravo ! Tu as fini en ${elapsedTime} secondes.`);
+    startBtn.disabled = false;
+
+    // Récupérer le nom du joueur, ici juste un prompt simple (à adapter selon ton UI)
+    const playerName = prompt("Entrez votre nom pour enregistrer le score :") || "Anonyme";
+
+    // Appeler gameOver avec le nom et le temps (score)
+    sendScoreIfTopScore(playerName, elapsedTime);
+  }
+}
+
 function resetBoard() {
   [firstCard, secondCard] = [null, null];
   lockBoard = false;
@@ -86,13 +108,4 @@ function resetGame() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
-}
-
-function checkGameEnd() {
-  const matchedCards = container.querySelectorAll(".matched");
-  if (matchedCards.length === shuffledCards.length) {
-    stopTimer();
-    alert(`Bravo ! Tu as fini en ${getElapsedTime()} secondes.`);
-    startBtn.disabled = false;
-  }
 }
