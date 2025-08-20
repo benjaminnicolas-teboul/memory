@@ -1,0 +1,29 @@
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);  /* 7 colonnes de 60px */
+  grid-template-rows: repeat(4, 80px);     /* 4 lignes de 80px */
+  gap: 8px;
+  width: max-content;
+  margin: 20px auto;
+}
+
+.card {
+  width: 60px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card.backface {
+  background-color: gray;   /* dos grisé */
+  filter: grayscale(100%);
+  cursor: default;
+}
