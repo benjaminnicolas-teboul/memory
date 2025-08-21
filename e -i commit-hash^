@@ -1,0 +1,98 @@
+[33mcommit 8886961b3ce07828be7d1e6fccdd907ea2dc7190[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:51:20 2025 +0200
+
+    fix responsive
+
+[33mcommit fec2c53d0beb92ad6cda2e49f3068ba83d19a969[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:39:12 2025 +0200
+
+    fix pading mobile
+
+[33mcommit 64d9829493dccd39bafe0e2e98811c049100d55d[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:35:57 2025 +0200
+
+    fix responsive
+
+[33mcommit 08b79be81a9acef909f520cb3aaf0835dec77a52[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:30:37 2025 +0200
+
+    feat reajust css
+
+[33mcommit 2a5ff9f758703d39835ea8cebd2b87a9f30ee57c[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:27:02 2025 +0200
+
+    feat adjust css
+
+[33mcommit cce3e99040a29e74edd1574811923c33cacbc3ec[m
+Merge: e709e76 d6a8801
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:24:36 2025 +0200
+
+    Merge branch 'master' of https://github.com/benjaminnicolas-teboul/memory
+
+[33mcommit e709e76f0e1dbe010e9080d79cebbb8bbda523d6[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:24:33 2025 +0200
+
+    feat reponsive brushup
+
+[33mcommit d6a88018c2a70fc0ab32d72cd6c9ff3d5110674d[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:21:14 2025 +0200
+
+    Update README.md
+
+
+[33mcommit 826c6cb72c537c3c1028b67a70a2dc61bdc7318c[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:17:41 2025 +0200
+
+    Update README.md
+
+[33mcommit 442f58cf58f1c58d9035e67fa91b3529922c710d[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 22:16:44 2025 +0200
+
+    feat responsive
+
+[33mcommit a9f505cdf9129d74d5029b17be43348ad0669991[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 21:34:41 2025 +0200
+
+    feat scores
+
+[33mcommit a1c0b8a888c6b55f3e4455e697df8ca4fb5ea129[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 18:17:31 2025 +0200
+
+    feat best scores
+
+[33mcommit 73defdd5794a7c88a4fbc034312bf4d46cc436cf[m
+Merge: 6f6073f 8013d49
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 15:16:19 2025 +0200
+
+    Merge branch 'master' of https://github.com/benjaminnicolas-teboul/memory
+
+[33mcommit 6f6073f9dce508dea9192c7f26860803e0f274d4[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 15:16:15 2025 +0200
+
+    feat add timer
+
+[33mcommit 8013d49d73931aedf9f39780668ef35ac80eb532[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 15:13:43 2025 +0200
+
+    Create README.md
+
+[33mcommit d626d879682d48032659dde6183155c92bc44854[m
+Author: benjaminnicolas-teboul <benjtenuts@hotmail.fr>
+Date:   Wed Aug 20 15:11:44 2025 +0200
+
+    Initial commit
